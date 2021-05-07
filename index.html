@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel agency... </title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+      /* css Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css veriables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    /* position: relative fixed; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    text-shadow: 12px;
+}
+/* logo and image css */
+#logo{
+    margin: 6px 22px;
+}
+#logo img{
+    width: 48px;
+    height: 45px;
+    transition: all 2s ;
+}
+#logo img:hover{
+    width: 48px;
+    height: 45px;
+    transform: rotate(360deg);
+}
+/* body css */
+body::before{
+    content: "";
+    background:url('./travel\ background.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#heading{
+  color: rgb(206 56 56);
+    font-size: 80px;
+    margin: 87px 214px;
+    font-family: 'Baloo Bhai', cursive;
+}
+#manali{
+    height: 164px;
+    width: 269px;
+    margin: -40px 89px;
+    border: 3px solid white;
+}
+#agra {
+    height: 164px;
+    width: 269px;
+    margin: -40px -69px;
+    border: 3px solid white;
+}
+#jammu{
+    height: 164px;
+    width: 269px;
+    margin: -40px 87px;
+    border: 3px solid white;
+}
+#kutub{
+    height: 164px;
+    width: 269px;
+    margin: -40px -63px;
+    border: 3px solid white;
+}
+#canada{
+    height: 164px;
+    width: 269px;
+    margin: 52px 159px;
+    border: 3px solid white;
+}
+#dubai{
+    height: 164px;
+    width: 269px;
+    margin: 52px -139px;
+    border: 3px solid white;
+}
+#redfort{
+    height: 164px;
+    width: 269px;
+    margin: 52px 156px;
+    border: 3px solid white;
+}
+#makkah{
+    height: 164px;
+    width: 269px;
+    margin: 52px -129px;
+    border: 3px solid white;
+}
+#figures{
+    margin: 30px 70px;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./travel logo...jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="index.html"  >Home</a></li>
+            <li class="item"><a href="places.html" target="_blank" >Places</a></li>
+            <li class="item"><a href="login page.html" target="_blank" >Login</a></li>
+            <li class="item"><a href="#" target="_blank" >Contect us</a></li>
+        </ul>
+    </nav>
+    <h1 id="heading">TRAVEL INFORMATION</h1>
+    <figureid id="figures">
+        <a href="manali.html" target="_blank" class="manali">
+            <img  title="MANALI" id="manali" src="./manali.jpg" alt="" >
+        </a>
+        <a href="agra.html" target="_blank" class="agra">
+            <img title="Agra" id="agra" src="./agra.jpg" alt="">
+        </a>
+        <a href="Jammu and Kashmir.html" target="_blank" class="jammu">
+            <img title="Jammu and Kashmir" id="jammu" src="./jammu and kasmir.jpg" alt="">
+        </a>
+        <a href="Qutb Minar.html" target="_blank" class="kutub">
+            <img title="kutub minar" id="kutub" src="./kutub minar.jpg" alt="">
+        </a>
+        <a href="Canada.html" target="_blank" class="canada">
+            <img title="canada" id="canada" src="./canada.jpg" alt="">
+        </a>   
+        <a href="#" target="_blank" class="dubai">
+             <img title="dubai miracle garden" id="dubai" src="./dubai miracle garden.jpg" alt="">
+        </a>
+        <a href="#" target="_blank" class="redfort">
+            <img title="red fort" id="redfort" src="./red fort.jpg" alt="">
+        </a>
+        <a href="#" target="_blank" class="Makka">
+            <img title="makkah masjid" id="makkah" src="./makkah masjid.jpg" alt="">
+        </a>
+    </figure>
+    <footer>
+        copyright &copy;by me.
+    </footer>
+</body>
+</html>
